@@ -11,7 +11,9 @@ function App() {
     try 
     {
 
-      const response = await api.get("/api/v1/movies");
+    	const response = await api.get("/api/v1/movies");
+
+			console.log(response.data);
 
       setMovies(response.data);
 
@@ -22,6 +24,10 @@ function App() {
     }
 
   }
+
+	useEffect(() => {
+		getMovies();
+	},[])
 
   return (
     <div className="App">
