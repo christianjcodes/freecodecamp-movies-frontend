@@ -33,6 +33,13 @@ function App() {
 
   return (
     <div className="App">
+
+      <Routes>
+        <Route path="/" element={layout}>
+            
+
+        </Route>
+      </Routes>
      
     </div>
   );
