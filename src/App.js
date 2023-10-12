@@ -22,8 +22,6 @@ function App() {
 
     	const response = await api.get("/api/v1/movies");
 
-			console.log(response.data);
-
       setMovies(response.data);
 
     } 
@@ -49,7 +47,7 @@ function App() {
     } 
     catch (error) 
     {
-
+        console.error(error);
     }
 
   }
